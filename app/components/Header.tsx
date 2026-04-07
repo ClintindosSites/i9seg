@@ -34,10 +34,12 @@ export default function Header() {
         <div className="container header-flex">
           <Link href="/" className="logo">
             <Image
-              src="/images/logo.png"
-              alt="i9 SEG"
-              width={140}
-              height={50}
+              src="/images/logo.webp"
+              alt="Logo"
+              width={100}
+              height={80}
+              priority
+              style={{ height: "auto" }}
             />
           </Link>
 
@@ -49,21 +51,21 @@ export default function Header() {
             <div className="dropdown">
               <span>Serviços ▾</span>
               <div className="dropdown-content">
-                <Link href="/servicos/pgr">PGR</Link>
-                <Link href="/servicos/pcmso">PCMSO</Link>
+                <Link href="/pgr">PGR</Link>
+                <Link href="/pcmso">PCMSO</Link>
               </div>
             </div>
 
             <Link href="/#faq">FAQ</Link>
             <Link href="/#contato">Contato</Link>
 
-            <a
+            <Link
               className="btn-header"
               target="_blank"
               href="https://wa.me/553186191591"
             >
               WhatsApp
-            </a>
+            </Link>
           </nav>
 
           {/* HAMBURGER */}

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const slides = [
   {
-    image: "/images/slide-1.png",
+    image: "/images/slide-1.webp",
     title: "Proteja Sua Empresa Contra Multas e Processos",
     description:
       "Implantamos PGR, PCMSO e laudos técnicos exigidos por lei para manter sua empresa 100% regularizada.",
@@ -12,7 +12,7 @@ const slides = [
     button: "Solicitar Orçamento",
   },
   {
-    image: "/images/slide-2.png",
+    image: "/images/slide-2.webp",
     title: "Ergonomia e AET Conforme NR-17",
     description:
       "Reduza afastamentos, aumente produtividade e evite passivos trabalhistas com análises ergonômicas completas.",
@@ -20,7 +20,7 @@ const slides = [
     button: "Falar com Especialista",
   },
   {
-    image: "/images/slide-3.png",
+    image: "/images/slide-3.webp",
     title: "LTCAT, Insalubridade e Periculosidade",
     description:
       "Elaboração de laudos técnicos completos para garantir segurança jurídica e previdenciária.",

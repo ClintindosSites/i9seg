@@ -38,7 +38,7 @@ html {
 
 /* LOGO */
 .logo img {
-  height: 60px;
+  height: auto;
   background: #fff;
   border-radius: 50px;
   padding: 5px;
@@ -538,7 +538,7 @@ html {
 .contato {
   position: relative;
   padding: 100px 20px;
-  background: url("/images/contato-bg.png") center/cover no-repeat;
+  background: url("/images/contato-bg.webp") center/cover no-repeat;
   color: white;
 }
 
@@ -774,6 +774,7 @@ html {
 }
 .whatsapp-float img {
   max-width: 58px;
+  height: auto;
 }
 .whatsapp-float:hover {
   transform: scale(1.1);
@@ -1345,7 +1346,7 @@ html {
 
 /* BACKGROUND (IMAGEM + GRADIENTE) */
 .ergonomia-hero {
-  background: url("/images/ergonomia-bg.png") center/cover no-repeat;
+  background: url("/images/ergonomia-bg.webp") center/cover no-repeat;
 }
 
 /* OVERLAY EXTRA (opcional pra profundidade) */
@@ -1779,7 +1780,7 @@ html {
 
 /* VARIAÇÃO PGR */
 .pgr-hero {
-  background: url("/images/pgr-bg.jpeg") center/cover no-repeat;
+  background: url("/images/pgr-bg.webp") center/cover no-repeat;
 }
 
 /* OVERLAY */
@@ -2166,5 +2167,329 @@ html {
 
   .cta-final .btn-primary {
     width: 100%;
+  }
+}
+/*PCMSO*/
+/* HERO BASE (reaproveitado) */
+.hero-servico {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* VARIAÇÃO PCMSO */
+.pcmso-hero {
+  background:
+    linear-gradient(rgba(10, 80, 90, 0.85), rgba(5, 40, 45, 0.95)),
+    url("/images/pcmso-bg.webp") center/cover no-repeat;
+}
+
+/* OVERLAY */
+.hero-servico .overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent, #0f3c44);
+  z-index: 1;
+}
+
+/* CONTEÚDO */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+/* TAG */
+.tag-servico {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  color: #00e0ff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(6px);
+}
+
+/* TÍTULO */
+.hero-content h1 {
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* TEXTO */
+.hero-subseo {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #e0f7fa;
+}
+
+/* BENEFÍCIOS */
+.hero-benefits {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.hero-benefits li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+/* BOTÃO */
+.btn-primary {
+  display: inline-block;
+  background: linear-gradient(135deg, #00c9a7, #00e0ff);
+  color: #003b44;
+  padding: 14px 26px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: 0.3s;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(0, 224, 255, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(0, 224, 255, 0.5);
+}
+
+/* RESPONSIVO */
+@media (max-width: 992px) {
+  .hero-servico {
+    min-height: 90vh;
+    text-align: center;
+  }
+
+  .hero-content {
+    margin: 0 auto;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-subseo {
+    font-size: 15px;
+  }
+
+  .hero-benefits li {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 26px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* CONTEÚDO PCMSO */
+.conteudo-pcmso {
+  padding: 100px 20px;
+  background: #ffffff;
+}
+
+.conteudo-pcmso .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* TÍTULOS */
+.conteudo-pcmso h2 {
+  font-size: 32px;
+  color: #0f3c44;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.conteudo-pcmso h2::after {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background: #1e73e8;
+  display: block;
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+/* PARÁGRAFOS */
+.conteudo-pcmso p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* LISTAS */
+.conteudo-pcmso ul {
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.conteudo-pcmso ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+  position: relative;
+  padding-left: 25px;
+}
+
+/* CHECK ICON */
+.conteudo-pcmso ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #1e73e8;
+  font-size: 14px;
+}
+
+/* PROCESSO GRID */
+.processo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.processo-item {
+  background: #f8fbfc;
+  padding: 25px;
+  border-radius: 10px;
+  border-left: 4px solid #1e73e8;
+  transition: 0.3s;
+}
+
+.processo-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.processo-item h4 {
+  color: #0f3c44;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.processo-item p {
+  font-size: 15px;
+  color: #555;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .conteudo-pcmso {
+    padding: 60px 20px;
+  }
+
+  .conteudo-pcmso h2 {
+    font-size: 26px;
+  }
+
+  .processo-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* AUTORIDADE PCMSO */
+.autoridade-pcmso {
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #0f3c44, #146c78);
+  color: #fff;
+  text-align: center;
+}
+
+.autoridade-pcmso .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* TÍTULO */
+.autoridade-pcmso h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.autoridade-pcmso h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #1e73e8;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* LISTA */
+.autoridade-pcmso ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.autoridade-pcmso ul li {
+  font-size: 17px;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 28px;
+  text-align: left;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CHECK ICON */
+.autoridade-pcmso ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #1e73e8;
+  font-weight: bold;
+}
+
+/* BOTÃO */
+.autoridade-pcmso .btn-secondary {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #1e73e8;
+  color: #fff;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.autoridade-pcmso .btn-secondary:hover {
+  background: #155ab6;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .autoridade-pcmso {
+    padding: 60px 20px;
+  }
+
+  .autoridade-pcmso h2 {
+    font-size: 26px;
+  }
+
+  .autoridade-pcmso ul li {
+    font-size: 15px;
   }
 }

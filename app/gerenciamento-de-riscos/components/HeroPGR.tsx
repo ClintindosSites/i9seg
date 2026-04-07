@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HeroPGR() {
   return (
     <section className="hero-servico pgr-hero">
@@ -21,14 +23,14 @@ export default function HeroPGR() {
           <li>✔ Documentação técnica completa</li>
         </ul>
 
-        <a
+        <Link
           target="_blank"
           rel="noopener noreferrer"
           href="https://wa.me/553186191591?text=Olá,%20quero%20implantar%20o%20PGR%20na%20minha%20empresa"
           className="btn-primary"
         >
           Solicitar Implantação do PGR
-        </a>
+        </Link>
       </div>
     </section>
   );
