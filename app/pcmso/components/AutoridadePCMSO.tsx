@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function AutoridadePCMSO() {
   return (
     <section className="autoridade-pcmso">
@@ -11,14 +13,14 @@ export default function AutoridadePCMSO() {
           <li>Suporte completo em fiscalizações</li>
         </ul>
 
-        <a
+        <Link
           target="_blank"
           href="https://wa.me/553186191591?text=Quero%20regularizar%20o%20PCMSO"
           className="btn-secondary"
           rel="noopener noreferrer"
         >
           Falar com Especialista
-        </a>
+        </Link>
       </div>
     </section>
   );
