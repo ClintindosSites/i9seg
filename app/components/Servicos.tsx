@@ -12,7 +12,7 @@ export default function Services() {
       title: "PGR – Programa de Gerenciamento de Riscos",
       description:
         "Implantação completa do PGR conforme NR-01, com inventário de riscos e plano de ação obrigatório.",
-      link: "/pgr",
+      link: "/gerenciamento-de-riscos",
     },
     {
       title: "PCMSO – Programa de Controle Médico",
