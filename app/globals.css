@@ -142,7 +142,7 @@ html {
   right: -100%;
   width: 280px;
   height: 100vh;
-  background: #fff;
+  background: #003b44;
   display: flex;
   flex-direction: column;
   padding: 80px 20px;
@@ -152,7 +152,7 @@ html {
 
 .mobile-menu a {
   margin: 15px 0;
-  color: #0f3c44;
+  color: #fff;
   text-decoration: none;
   font-weight: 500;
 }
@@ -1012,23 +1012,6 @@ html {
 .service-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-}
-
-/* BOTÃO */
-.btn-secondary {
-  align-self: flex-start;
-  background: transparent;
-  border: 1px solid #25d366;
-  color: #25d366;
-  padding: 8px 14px;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.btn-secondary:hover {
-  background: #25d366;
-  color: #fff;
 }
 
 /* CTA FINAL */

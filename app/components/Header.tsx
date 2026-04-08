@@ -27,7 +27,9 @@ export default function Header() {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "auto";
+  }, [menuOpen]);
   return (
     <>
       <header className={`header ${hideHeader ? "hide" : ""}`}>
@@ -105,37 +107,38 @@ export default function Header() {
 
       {/* MENU MOBILE */}
       <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
-        <Link href="/" onClick={() => setMenuOpen(false)}>
-          Início
-        </Link>
-        <Link href="/#sobre" onClick={() => setMenuOpen(false)}>
-          Sobre
-        </Link>
+        <div className="mobile-header">
+          <span>Menu</span>
+        </div>
 
-        <Link href="/#contato" onClick={() => setMenuOpen(false)}>
-          Contato
-        </Link>
-        <Link href="/servicos/assistencia-tecnica">
-          Assistência Técnica Pericial
-        </Link>
-        <Link href="/servicos/consultoria">
-          Consultoria em Segurança do Trabalho
-        </Link>
-        <Link href="/servicos/gestao-de-riscos">
-          Gestão de Riscos Ocupacionais
-        </Link>
-        <Link href="/servicos/periculosidade">
-          LP – Laudo de Periculosidade
-        </Link>
-        <Link href="/servicos/insalubridade">LI – Laudo de Insalubridade</Link>
-        <Link href="/servicos/ltcat">LTCAT</Link>
-        <Link href="/servicos/pcmso">PCMSO – Programa de Controle Médico</Link>
-        <Link href="/servicos/gerenciamento-de-riscos">
-          PGR – Programa de Gerenciamento de Riscos
-        </Link>
-        <Link href="/servicos/ergonomia">
-          Ergonomia – AET e Fatores Psicossociais
-        </Link>
+        <div className="mobile-links">
+          <Link href="/" onClick={() => setMenuOpen(false)}>
+            Início
+          </Link>
+          <Link href="/#sobre" onClick={() => setMenuOpen(false)}>
+            Sobre
+          </Link>
+
+          <div className="mobile-group">
+            <span>Serviços</span>
+
+            <Link href="/servicos/assistencia-tecnica">
+              Assistência Técnica
+            </Link>
+            <Link href="/servicos/consultoria">Consultoria</Link>
+            <Link href="/servicos/gestao-de-riscos">Gestão de Riscos</Link>
+            <Link href="/servicos/periculosidade">Periculosidade</Link>
+            <Link href="/servicos/insalubridade">Insalubridade</Link>
+            <Link href="/servicos/ltcat">LTCAT</Link>
+            <Link href="/servicos/pcmso">PCMSO</Link>
+            <Link href="/servicos/gerenciamento-de-riscos">PGR</Link>
+            <Link href="/servicos/ergonomia">Ergonomia</Link>
+          </div>
+
+          <Link href="/#contato" onClick={() => setMenuOpen(false)}>
+            Contato
+          </Link>
+        </div>
       </div>
 
       {/* OVERLAY */}
