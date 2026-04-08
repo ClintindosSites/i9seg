@@ -3969,3 +3969,383 @@ html {
     font-size: 16px;
   }
 }
+/*Conslutoria pagina*/
+/* HERO CONSULTORIA */
+.hero-consultoria {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url("/images/consultoria-seguranca.webp") center/cover no-repeat;
+  color: #fff;
+}
+
+.hero-consultoria .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 60, 68, 0.85);
+}
+
+/* CONTEÚDO */
+.hero-consultoria .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 750px;
+}
+
+/* TÍTULO */
+.hero-consultoria h1 {
+  font-size: 44px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+/* TEXTO */
+.hero-consultoria p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  opacity: 0.95;
+}
+
+/* BOTÃO */
+.hero-consultoria .btn-primary {
+  display: inline-block;
+  background: #25d366;
+  color: #fff;
+  padding: 16px 28px;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.hero-consultoria .btn-primary:hover {
+  transform: translateY(-3px);
+  background: #1ebe5d;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .hero-consultoria {
+    height: auto;
+    padding: 120px 20px 80px;
+  }
+
+  .hero-consultoria h1 {
+    font-size: 30px;
+  }
+
+  .hero-consultoria p {
+    font-size: 16px;
+  }
+}
+/* SEÇÃO INTRO CONSULTORIA */
+.secao-consultoria-intro {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.secao-consultoria-intro .container {
+  max-width: 900px;
+  text-align: center;
+}
+
+/* TÍTULO */
+.secao-consultoria-intro h2 {
+  font-size: 32px;
+  color: #0f3c44;
+  margin-bottom: 25px;
+}
+
+/* PARÁGRAFOS */
+.secao-consultoria-intro p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* DESTAQUE (efeito sutil de autoridade) */
+.secao-consultoria-intro p:last-child {
+  font-weight: 500;
+  color: #0f3c44;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .secao-consultoria-intro {
+    padding: 60px 20px;
+  }
+
+  .secao-consultoria-intro h2 {
+    font-size: 26px;
+  }
+
+  .secao-consultoria-intro p {
+    font-size: 16px;
+  }
+}
+/* SEÇÃO SERVIÇOS CONSULTORIA */
+.secao-servicos-consultoria {
+  padding: 80px 20px;
+  background: #0f3c44;
+  color: #fff;
+}
+
+.secao-servicos-consultoria h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.grid-servicos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* CARDS */
+.secao-servicos-consultoria .card-info {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+  transition: 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(5px);
+}
+
+.secao-servicos-consultoria .card-info:hover {
+  transform: translateY(-5px);
+  background: #146c78;
+}
+
+/* TÍTULO CARD */
+.secao-servicos-consultoria .card-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* TEXTO CARD */
+.secao-servicos-consultoria .card-info p {
+  font-size: 15px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* RESPONSIVO */
+@media (max-width: 992px) {
+  .grid-servicos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-servicos {
+    grid-template-columns: 1fr;
+  }
+
+  .secao-servicos-consultoria h2 {
+    font-size: 26px;
+  }
+}
+/* SEÇÃO SERVIÇOS CONSULTORIA */
+.secao-servicos-consultoria {
+  padding: 80px 20px;
+  background: #0f3c44;
+  color: #fff;
+}
+
+.secao-servicos-consultoria h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.grid-servicos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* CARDS */
+.secao-servicos-consultoria .card-info {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+  transition: 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(5px);
+}
+
+.secao-servicos-consultoria .card-info:hover {
+  transform: translateY(-5px);
+  background: #146c78;
+}
+
+/* TÍTULO CARD */
+.secao-servicos-consultoria .card-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* TEXTO CARD */
+.secao-servicos-consultoria .card-info p {
+  font-size: 15px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* RESPONSIVO */
+@media (max-width: 992px) {
+  .grid-servicos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-servicos {
+    grid-template-columns: 1fr;
+  }
+
+  .secao-servicos-consultoria h2 {
+    font-size: 26px;
+  }
+}
+.subtitulo {
+  text-align: center;
+  margin-bottom: 40px;
+  opacity: 0.8;
+}
+/* SEÇÃO BENEFÍCIOS CONSULTORIA */
+.secao-beneficios-consultoria {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.secao-beneficios-consultoria h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #0f3c44;
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.grid-beneficios {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* CARDS */
+.benefit {
+  background: #f9fbfc;
+  padding: 25px;
+  border-radius: 12px;
+  transition: 0.3s;
+  border: 1px solid #e5eef0;
+  text-align: center;
+}
+
+.benefit:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* TÍTULO */
+.benefit h3 {
+  font-size: 18px;
+  color: #146c78;
+  margin-bottom: 10px;
+}
+
+/* TEXTO */
+.benefit p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* RESPONSIVO */
+@media (max-width: 992px) {
+  .grid-beneficios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-beneficios {
+    grid-template-columns: 1fr;
+  }
+
+  .secao-beneficios-consultoria h2 {
+    font-size: 26px;
+  }
+}
+/* DARK SECTION */
+.section.dark {
+  background: #0f3c44;
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.section.dark h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.section.dark p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  opacity: 0.9;
+}
+
+/* HIGHLIGHT */
+.highlight {
+  background: linear-gradient(135deg, #146c78, #0f3c44);
+  padding: 25px;
+  border-radius: 12px;
+  font-weight: 500;
+  line-height: 1.6;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* CTA */
+.cta {
+  background: linear-gradient(135deg, #146c78, #0f3c44);
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.cta h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  opacity: 0.9;
+}
+
+/* BOTÃO */
+.btn-primary {
+  background: #1e73e8;
+  padding: 14px 28px;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  background: #155ab6;
+}
