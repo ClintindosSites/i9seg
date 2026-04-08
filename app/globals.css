@@ -2971,3 +2971,168 @@ html {
     font-size: 1.6rem;
   }
 }
+/* =========================
+   PROCESSO - INSALUBRIDADE
+========================= */
+.processo-li {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.processo-li .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* TÍTULO */
+.processo-li h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #0f3c44;
+  font-weight: 700;
+}
+
+/* GRID */
+.processo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* CARD */
+.processo-item {
+  background: #f9fbfc;
+  padding: 30px 25px;
+  border-radius: 12px;
+  transition: 0.3s;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+}
+
+.processo-item:hover {
+  transform: translateY(-6px);
+}
+
+/* NÚMERO */
+.processo-item span {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1e73e8;
+  margin-bottom: 15px;
+}
+
+/* TÍTULO CARD */
+.processo-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #146c78;
+}
+
+/* TEXTO */
+.processo-item p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* RESPONSIVO */
+@media (max-width: 992px) {
+  .processo-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .processo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .processo-li h2 {
+    font-size: 1.6rem;
+  }
+}
+.processo-item span {
+  width: 50px;
+  height: 50px;
+  background: #e6f0ff;
+  color: #1e73e8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+}
+/* =========================
+   CTA - INSALUBRIDADE
+========================= */
+.cta-li {
+  position: relative;
+  padding: 100px 20px;
+  background: url("/images/cta-insalubridade.jpg") center/cover no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+/* OVERLAY */
+.cta-li .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 60, 68, 0.9);
+}
+
+/* CONTAINER */
+.cta-li .container {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* TÍTULO */
+.cta-li h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* TEXTO */
+.cta-li p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  opacity: 0.95;
+}
+
+/* BOTÃO */
+.cta-li .btn-primary {
+  display: inline-block;
+  background: #1e73e8;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.cta-li .btn-primary:hover {
+  background: #155ab6;
+  transform: translateY(-3px);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .cta-li {
+    padding: 70px 20px;
+  }
+
+  .cta-li h2 {
+    font-size: 1.7rem;
+  }
+
+  .cta-li p {
+    font-size: 1rem;
+  }
+}
