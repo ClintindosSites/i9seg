@@ -3455,3 +3455,517 @@ html {
     font-size: 16px;
   }
 }
+/* pagina de assistencia tecnica*/
+.hero-pericia {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background: url("/images/assistencia-bg.webp") center/cover no-repeat;
+}
+
+/* OVERLAY */
+.hero-pericia .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+/* CONTEÚDO */
+.hero-pericia .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+/* TAG */
+.hero-pericia .tag {
+  display: inline-block;
+  background: #1e73e8;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* TÍTULO */
+.hero-pericia h1 {
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+/* TEXTO */
+.hero-pericia p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #e0e0e0;
+}
+
+/* BENEFÍCIOS */
+.hero-pericia .hero-benefits {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.hero-pericia .hero-benefits li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* BOTÃO */
+.hero-pericia .btn-primary {
+  display: inline-block;
+  background: #146c78;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.hero-pericia .btn-primary:hover {
+  background: #0f3c44;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .hero-pericia {
+    height: auto;
+    padding: 120px 0 80px;
+  }
+
+  .hero-pericia h1 {
+    font-size: 28px;
+  }
+
+  .hero-pericia p {
+    font-size: 16px;
+  }
+}
+/* SEÇÃO */
+.intro-pericia {
+  padding: 100px 0;
+  background: #f8fafc;
+}
+
+/* TÍTULO */
+.intro-pericia h2 {
+  font-size: 32px;
+  color: #0f3c44;
+  margin-bottom: 25px;
+  max-width: 800px;
+}
+
+/* TEXTO */
+.intro-pericia p {
+  font-size: 17px;
+  color: #555;
+  margin-bottom: 20px;
+  max-width: 800px;
+  line-height: 1.7;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .intro-pericia {
+    padding: 70px 0;
+  }
+
+  .intro-pericia h2 {
+    font-size: 24px;
+  }
+
+  .intro-pericia p {
+    font-size: 16px;
+  }
+}
+/* SEÇÃO */
+.intro-pericia {
+  padding: 100px 0;
+  background: #f8fafc;
+}
+
+/* TÍTULO */
+.intro-pericia h2 {
+  font-size: 32px;
+  color: #0f3c44;
+  margin-bottom: 25px;
+  max-width: 800px;
+}
+
+/* TEXTO */
+.intro-pericia p {
+  font-size: 17px;
+  color: #555;
+  margin-bottom: 20px;
+  max-width: 800px;
+  line-height: 1.7;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .intro-pericia {
+    padding: 70px 0;
+  }
+
+  .intro-pericia h2 {
+    font-size: 24px;
+  }
+
+  .intro-pericia p {
+    font-size: 16px;
+  }
+}
+/* SEÇÃO DARK */
+.importancia-pericia {
+  padding: 100px 0;
+  background: #0f3c44;
+  color: #fff;
+  text-align: center;
+}
+
+/* TÍTULO */
+.importancia-pericia h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.importancia-pericia .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* CARDS */
+.importancia-pericia .card-info {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: left;
+  transition: 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* HOVER */
+.importancia-pericia .card-info:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* TITULO CARD */
+.importancia-pericia .card-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* TEXTO */
+.importancia-pericia .card-info p {
+  font-size: 15px;
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .importancia-pericia {
+    padding: 70px 0;
+  }
+
+  .importancia-pericia h2 {
+    font-size: 24px;
+  }
+
+  .importancia-pericia .grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* SEÇÃO DARK */
+.importancia-pericia {
+  padding: 100px 0;
+  background: #0f3c44;
+  color: #fff;
+  text-align: center;
+}
+
+/* TÍTULO */
+.importancia-pericia h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.importancia-pericia .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* CARDS */
+.importancia-pericia .card-info {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: left;
+  transition: 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* HOVER */
+.importancia-pericia .card-info:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* TITULO CARD */
+.importancia-pericia .card-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* TEXTO */
+.importancia-pericia .card-info p {
+  font-size: 15px;
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .importancia-pericia {
+    padding: 70px 0;
+  }
+
+  .importancia-pericia h2 {
+    font-size: 24px;
+  }
+
+  .importancia-pericia .grid {
+    grid-template-columns: 1fr;
+  }
+}
+.card-info {
+  border-left: 3px solid #1e73e8;
+}
+/* SEÇÃO ATUAÇÃO */
+.secao-atuacao {
+  padding: 80px 20px;
+  background: #f9fbfc;
+}
+
+.secao-atuacao h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #0f3c44;
+}
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+/* LINHA CENTRAL */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: #146c78;
+}
+
+/* PASSOS */
+.step {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 80px;
+}
+
+.step span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  background: #146c78;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(20, 108, 120, 0.3);
+}
+
+.step p {
+  background: #fff;
+  padding: 18px 22px;
+  border-radius: 12px;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 25px;
+  }
+
+  .step {
+    padding-left: 70px;
+  }
+
+  .step span {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .secao-atuacao h2 {
+    font-size: 26px;
+  }
+}
+/* SEÇÃO DIFERENCIAL */
+.secao-diferencial {
+  padding: 80px 20px;
+  background: #0f3c44;
+  color: #fff;
+  text-align: center;
+}
+
+.secao-diferencial h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.secao-diferencial .descricao {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 17px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* HIGHLIGHT */
+.highlight {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  background-color: #fff;
+}
+
+.highlight span {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+  backdrop-filter: blur(5px);
+  transition: 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #146c78;
+}
+
+.highlight span:hover {
+  background: #146c78;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .secao-diferencial h2 {
+    font-size: 26px;
+  }
+
+  .highlight {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .highlight span {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+}
+/* CTA FINAL PERÍCIA */
+.cta-final-pericia {
+  position: relative;
+  padding: 100px 20px;
+  background: url("/images/assistencia-bg.webp") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+}
+
+.cta-final-pericia .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 60, 68, 0.85);
+}
+
+.cta-final-pericia .container {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+/* TÍTULO */
+.cta-final-pericia h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+/* TEXTO */
+.cta-final-pericia p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+/* BOTÃO */
+.cta-final-pericia .btn-primary {
+  display: inline-block;
+  background: #25d366;
+  color: #fff;
+  padding: 16px 30px;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.cta-final-pericia .btn-primary:hover {
+  transform: translateY(-3px);
+  background: #1ebe5d;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .cta-final-pericia {
+    padding: 80px 20px;
+  }
+
+  .cta-final-pericia h2 {
+    font-size: 26px;
+  }
+
+  .cta-final-pericia p {
+    font-size: 16px;
+  }
+}
