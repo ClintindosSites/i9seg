@@ -6,61 +6,61 @@ export default function Services() {
       title: "Ergonomia – AET e Fatores Psicossociais",
       description:
         "Elaboração completa da AET, AEP e análise psicossocial conforme NR-17. Reduza afastamentos e passivos trabalhistas.",
-      link: "/ergonomia",
+      link: "/servicos/ergonomia",
     },
     {
       title: "PGR – Programa de Gerenciamento de Riscos",
       description:
         "Implantação completa do PGR conforme NR-01, com inventário de riscos e plano de ação obrigatório.",
-      link: "/gerenciamento-de-riscos",
+      link: "/servicos/gerenciamento-de-riscos",
     },
     {
       title: "PCMSO – Programa de Controle Médico",
       description:
         "Gestão completa do PCMSO conforme NR-07, garantindo acompanhamento médico ocupacional.",
-      link: "/pcmso",
+      link: "/servicos/pcmso",
     },
     {
       title: "LTCAT",
       description:
         "Laudo técnico essencial para aposentadoria especial e conformidade previdenciária.",
-      link: "/ltcat",
+      link: "/servicos/ltcat",
     },
     {
       title: "LI – Laudo de Insalubridade",
       description:
         "Avaliação técnica de agentes físicos, químicos e biológicos para evitar autuações e custos indevidos.",
-      link: "/insalubridade",
+      link: "/servicos/insalubridade",
     },
     {
       title: "LP – Laudo de Periculosidade",
       description:
         "Análise detalhada de riscos conforme NR-16, incluindo eletricidade e inflamáveis.",
-      link: "/periculosidade",
+      link: "/servicos/periculosidade",
     },
     {
       title: "Assistência Técnica Pericial",
       description:
         "Atuação em processos trabalhistas com parecer técnico para reduzir riscos jurídicos.",
-      link: "/assistencia-tecnica",
+      link: "/servicos/assistencia-tecnica",
     },
     {
       title: "Consultoria em Segurança do Trabalho",
       description:
         "Implementação completa de programas e adequação às Normas Regulamentadoras.",
-      link: "/consultoria",
+      link: "/servicos/consultoria",
     },
     {
       title: "Gestão de Riscos Ocupacionais",
       description:
         "Identificação e controle de riscos físicos, químicos, biológicos e ergonômicos.",
-      link: "/gestao-de-riscos",
+      link: "/servicos/gestao-de-riscos",
     },
     {
       title: "Treinamentos em Segurança",
       description:
         "Capacitação conforme NRs para evitar acidentes, multas e interdições.",
-      link: "/treinamento",
+      link: "/servicos/treinamento",
     },
   ];
 

@@ -51,8 +51,31 @@ export default function Header() {
             <div className="dropdown">
               <span>Serviços ▾</span>
               <div className="dropdown-content">
-                <Link href="/pgr">PGR</Link>
-                <Link href="/pcmso">PCMSO</Link>
+                <Link href="/servicos/assistencia-tecnica">
+                  Assistência Técnica Pericial
+                </Link>
+                <Link href="/servicos/consultoria">
+                  Consultoria em Segurança do Trabalho
+                </Link>
+                <Link href="/servicos/gestao-de-riscos">
+                  Gestão de Riscos Ocupacionais
+                </Link>
+                <Link href="/servicos/periculosidade">
+                  LP – Laudo de Periculosidade
+                </Link>
+                <Link href="/servicos/insalubridade">
+                  LI – Laudo de Insalubridade
+                </Link>
+                <Link href="/servicos/ltcat">LTCAT</Link>
+                <Link href="/servicos/pcmso">
+                  PCMSO – Programa de Controle Médico
+                </Link>
+                <Link href="/servicos/gerenciamento-de-riscos">
+                  PGR – Programa de Gerenciamento de Riscos
+                </Link>
+                <Link href="/servicos/ergonomia">
+                  Ergonomia – AET e Fatores Psicossociais
+                </Link>
               </div>
             </div>
 
@@ -91,6 +114,27 @@ export default function Header() {
 
         <Link href="/#contato" onClick={() => setMenuOpen(false)}>
           Contato
+        </Link>
+        <Link href="/servicos/assistencia-tecnica">
+          Assistência Técnica Pericial
+        </Link>
+        <Link href="/servicos/consultoria">
+          Consultoria em Segurança do Trabalho
+        </Link>
+        <Link href="/servicos/gestao-de-riscos">
+          Gestão de Riscos Ocupacionais
+        </Link>
+        <Link href="/servicos/periculosidade">
+          LP – Laudo de Periculosidade
+        </Link>
+        <Link href="/servicos/insalubridade">LI – Laudo de Insalubridade</Link>
+        <Link href="/servicos/ltcat">LTCAT</Link>
+        <Link href="/servicos/pcmso">PCMSO – Programa de Controle Médico</Link>
+        <Link href="/servicos/gerenciamento-de-riscos">
+          PGR – Programa de Gerenciamento de Riscos
+        </Link>
+        <Link href="/servicos/ergonomia">
+          Ergonomia – AET e Fatores Psicossociais
         </Link>
       </div>
 
