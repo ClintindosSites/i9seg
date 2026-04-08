@@ -54,7 +54,7 @@ export default function Services() {
       title: "Gestão de Riscos Ocupacionais",
       description:
         "Identificação e controle de riscos físicos, químicos, biológicos e ergonômicos.",
-      link: "/riscos",
+      link: "/gestao-de-riscos",
     },
     {
       title: "Treinamentos em Segurança",
