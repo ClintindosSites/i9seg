@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function About() {
   const stats = [
@@ -56,12 +57,15 @@ export default function About() {
             especializado e foco total na conformidade legal da sua empresa.
           </p>
 
-          <ul className="diferenciais">
-            <li>✔ Conformidade total com Normas Regulamentadoras</li>
-            <li>✔ Redução de riscos trabalhistas</li>
-            <li>✔ Atendimento técnico especializado</li>
-            <li>✔ Estratégias adaptadas à realidade da empresa</li>
-          </ul>
+          <div className="diferenciais">
+            <ul>
+              <li>✔ Conformidade total com Normas Regulamentadoras</li>
+              <li>✔ Redução de riscos trabalhistas</li>
+              <li>✔ Atendimento técnico especializado</li>
+              <li>✔ Estratégias adaptadas à realidade da empresa</li>
+            </ul>
+            <img src="/images/logo.webp" alt="logo de i9seg" />
+          </div>
         </div>
 
         {/* ESTATÍSTICAS */}

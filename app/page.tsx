@@ -1,6 +1,6 @@
 import About from "./components/About";
 import Contact from "./components/Contact";
-import CTA from "./components/CTA";
+
 import Differentials from "./components/Differentials";
 import FAQ from "./components/FAQ";
 import Hero from "./components/Hero";
@@ -12,7 +12,7 @@ export default function Home() {
       <Hero />
       <Services />
       <About />
-      <CTA />
+
       <Differentials />
       <FAQ />
       <Contact />

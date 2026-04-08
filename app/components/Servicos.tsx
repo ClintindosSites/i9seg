@@ -67,10 +67,13 @@ export default function Services() {
   return (
     <section id="servicos" className="servicos">
       <div className="container">
-        <h2 className="section-title">Nossos Serviços</h2>
-        <p className="section-subtitle">
-          Confira os benefícios que nossos serviços podem oferecer à sua empresa
-        </p>
+        <div className="servicos-text">
+          <h2 className="section-title">Nossos Serviços</h2>
+          <p className="section-subtitle">
+            Confira os benefícios que nossos serviços podem oferecer à sua
+            empresa
+          </p>
+        </div>
 
         <div className="services-grid">
           {services.map((service, index) => (

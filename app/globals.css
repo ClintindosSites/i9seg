@@ -12,6 +12,12 @@ body {
 html {
   scroll-behavior: smooth;
 }
+h1,
+h2,
+h3,
+h4 {
+  color: #003b44;
+}
 .container {
   width: 90%;
   max-width: 1200px;
@@ -72,7 +78,8 @@ html {
 }
 
 .btn-header:hover {
-  background: #0f3c44;
+  background: #fff;
+  color: #003b44;
 }
 
 /* DROPDOWN */
@@ -250,25 +257,12 @@ html {
 .hero-content h1 {
   font-size: 42px;
   margin-bottom: 20px;
+  color: fff;
 }
 
 .hero-content p {
   font-size: 18px;
   margin-bottom: 30px;
-}
-
-.btn-primary {
-  background: #00c9a7;
-  padding: 15px 35px;
-  border-radius: 40px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 600;
-  transition: 0.5s;
-  text-transform: uppercase;
-}
-.btn-primary:hover {
-  background: #0f3c44;
 }
 
 .servicos {
@@ -277,6 +271,7 @@ html {
 .servicos h2 {
   text-align: center;
   font-size: 2rem;
+  color: #003b44;
 }
 .servicos > p {
   text-align: center;
@@ -304,7 +299,10 @@ html {
   justify-content: space-between;
   gap: 1rem;
 }
-
+.services-grid h3 {
+  color: #003b44;
+  text-transform: uppercase;
+}
 .btn-secondary {
   background: #146c78;
   color: #fff;
@@ -320,7 +318,7 @@ html {
 }
 .sobre {
   padding: 80px 0;
-  background: #f8fafc;
+  background: #003b44;
 }
 
 .sobre-grid {
@@ -333,23 +331,30 @@ html {
 .sobre-texto h2 {
   font-size: 32px;
   margin-bottom: 20px;
-  color: #0f3c44;
+  color: #fff;
 }
 
 .sobre-texto p {
   margin-bottom: 20px;
   line-height: 1.7;
-  color: #555;
+  color: #fff;
 }
 
 .diferenciais {
   list-style: none;
   padding: 0;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
-
+.diferenciais img {
+  max-width: 400px;
+}
 .diferenciais li {
   margin-bottom: 10px;
-  font-weight: 500;
+  font-weight: 700;
+  color: #003b44;
+  list-style: none;
 }
 
 .sobre-stats {
@@ -395,11 +400,6 @@ html {
   .sobre-stats {
     grid-template-columns: 1fr;
   }
-}
-.cta-section {
-  padding: 80px 20px;
-  display: flex;
-  justify-content: center;
 }
 
 .cta-container {
@@ -472,7 +472,8 @@ html {
 }
 
 .diferencial-card {
-  background: white;
+  background: #003b44;
+  color: #fff;
   padding: 15px;
   max-width: 350px;
   width: 350px;
@@ -560,6 +561,7 @@ html {
 .contato-info h2 {
   font-size: 36px;
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .contato-info p {
@@ -878,10 +880,11 @@ html {
 }
 
 .btn-footer {
-  display: inline-block;
+  display: flex;
+  text-align: center;
   margin-top: 10px;
-  background: #25d366;
-  color: #fff;
+  background: #fff;
+  color: #003b44;
   padding: 10px 16px;
   border-radius: 6px;
 }
@@ -1034,7 +1037,8 @@ html {
 }
 .cta-section {
   padding: 80px 20px;
-  background: linear-gradient(135deg, #0b0f1a, #111827);
+  background: url(/public/images/consultoria-seguranca.webp) center/cover
+    no-repeat;
   text-align: center;
   color: #fff;
 }
@@ -1058,7 +1062,7 @@ html {
 /* BOTÃO */
 .cta-button {
   display: inline-block;
-  background: #25d366;
+  background: #003b44;
   color: #fff;
   padding: 14px 28px;
   border-radius: 8px;
@@ -1103,7 +1107,7 @@ html {
 
 /* CARD */
 .diferencial-card {
-  background: #f9fafc;
+  background: #003b44;
   padding: 25px;
   border-radius: 12px;
   transition: 0.3s;
@@ -1129,11 +1133,12 @@ html {
 
 .diferencial-card h3 {
   font-size: 18px;
+  color: #fff;
 }
 
 /* TEXTO */
 .diferencial-card p {
-  color: #555;
+  color: #fff;
   line-height: 1.5;
 }
 
@@ -1154,7 +1159,7 @@ html {
   text-align: center;
   margin-top: 40px;
   font-weight: 500;
-  color: #25d366;
+  color: #003b44;
 }
 .faq {
   padding: 80px 20px;
@@ -1340,6 +1345,7 @@ html {
   line-height: 1.2;
   margin-bottom: 20px;
   font-weight: 700;
+  color: #fff;
 }
 
 /* SUBTEXTO */
