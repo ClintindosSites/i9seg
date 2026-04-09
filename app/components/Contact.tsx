@@ -63,18 +63,6 @@ Mensagem: ${form.mensagem}`;
             >
               WhatsApp
             </Link>
-
-            <Link href="#" className="social-btn instagram">
-              Instagram
-            </Link>
-
-            <Link href="#" className="social-btn facebook">
-              Facebook
-            </Link>
-
-            <Link href="#" className="social-btn linkedin">
-              LinkedIn
-            </Link>
           </div>
         </div>
 
