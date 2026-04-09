@@ -5,7 +5,16 @@ export default function RiscosDetalhes() {
       <section className="section white dark">
         <div className="container">
           <h2>Classificação dos Riscos Avaliados</h2>
+          <p className="green">
+            A correta identificação dos fatores de riscos ocupacionais é
+            essencial para a conformidade legal e proteção da empresa contra
+            multas, processos trabalhistas e afastamentos previdenciários.
+          </p>
 
+          <p className="green">
+            Atuamos com metodologia técnica estruturada conforme exigências da
+            NR-01 e demais Normas Regulamentadoras aplicáveis.
+          </p>
           <div className="grid">
             <div className="card-info">
               <h3>Riscos Físicos</h3>

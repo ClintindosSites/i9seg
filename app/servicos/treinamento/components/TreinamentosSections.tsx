@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function TreinamentosSections() {
   return (
     <>
@@ -7,32 +9,32 @@ export function TreinamentosSections() {
           <h2>Principais Treinamentos</h2>
 
           <div className="grid">
-            <div className="card-info">
+            <div className=" card-treinamento">
               <h3>NR-10</h3>
               <p>Segurança em instalações e serviços em eletricidade.</p>
             </div>
 
-            <div className="card-info">
+            <div className="card-treinamento">
               <h3>NR-35</h3>
               <p>Trabalho em altura com foco em prevenção de quedas.</p>
             </div>
 
-            <div className="card-info">
+            <div className="card-treinamento">
               <h3>NR-33</h3>
               <p>Espaços confinados e controle de riscos críticos.</p>
             </div>
 
-            <div className="card-info">
+            <div className="card-treinamento">
               <h3>NR-06</h3>
               <p>Uso correto de Equipamentos de Proteção Individual.</p>
             </div>
 
-            <div className="card-info">
+            <div className="card-treinamento">
               <h3>CIPA</h3>
               <p>Formação e treinamento da comissão interna.</p>
             </div>
 
-            <div className="card-info">
+            <div className="card-treinamento">
               <h3>Personalizados</h3>
               <p>Treinamentos adaptados à realidade da sua empresa.</p>
             </div>
@@ -89,18 +91,19 @@ export function TreinamentosSections() {
       </section>
 
       {/* CTA FINAL */}
-      <section className="cta">
+      <section className=" cta-treinamento">
+        <div className="overlay"></div>
         <div className="container">
           <h2>Capacite sua equipe e evite riscos</h2>
           <p>Solicite um orçamento personalizado agora.</p>
 
-          <a
+          <Link
             target="_blank"
             href="https://wa.me/553186191591?text=Olá,%20preciso%20de%20treinamentos%20conforme%20NRs"
             className="btn-primary"
           >
             Falar com Especialista
-          </a>
+          </Link>
         </div>
       </section>
     </>

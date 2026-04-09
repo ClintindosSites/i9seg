@@ -20,14 +20,13 @@ export default function PGRConteudo() {
         <h3>O PGR é composto por:</h3>
 
         <ul>
-          <li>✔ Levantamento técnico dos riscos ocupacionais</li>
+          <li> Levantamento técnico dos riscos ocupacionais</li>
           <li>
-            ✔ Classificação de riscos físicos, químicos, biológicos e
-            ergonômicos
+            Classificação de riscos físicos, químicos, biológicos e ergonômicos
           </li>
-          <li>✔ Avaliação de riscos psicossociais</li>
-          <li>✔ Plano de ação com medidas preventivas</li>
-          <li>✔ Monitoramento contínuo</li>
+          <li> Avaliação de riscos psicossociais</li>
+          <li> Plano de ação com medidas preventivas</li>
+          <li> Monitoramento contínuo</li>
         </ul>
       </div>
     </section>

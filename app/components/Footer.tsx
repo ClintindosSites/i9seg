@@ -41,14 +41,14 @@ export default function Footer() {
           <p>📍 Belo Horizonte - MG</p>
           <p>📞 (31) 8619-1591</p>
 
-          <a
-            className="btn-footer"
+          <Link
+            className="btn-primary"
             href="https://wa.me/553186191591?text=Olá,%20quero%20informações"
             target="_blank"
             rel="noopener noreferrer"
           >
             Falar no WhatsApp
-          </a>
+          </Link>
         </div>
       </div>
 

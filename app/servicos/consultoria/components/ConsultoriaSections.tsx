@@ -22,7 +22,8 @@ export default function ConsultoriaSections() {
       </section>
 
       {/* CTA FINAL */}
-      <section id="contato" className="cta">
+      <section id="contato" className="cta-consultoria">
+        <div className="overlay"></div>
         <div className="container">
           <h2>
             Transforme a Segurança da sua Empresa em um Sistema Estratégico

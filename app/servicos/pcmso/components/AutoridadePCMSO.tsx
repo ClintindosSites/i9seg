@@ -16,7 +16,7 @@ export default function AutoridadePCMSO() {
         <Link
           target="_blank"
           href="https://wa.me/553186191591?text=Quero%20regularizar%20o%20PCMSO"
-          className="btn-secondary"
+          className="btn-primary"
           rel="noopener noreferrer"
         >
           Falar com Especialista

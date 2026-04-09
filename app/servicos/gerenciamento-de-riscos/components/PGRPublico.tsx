@@ -10,12 +10,12 @@ export default function PGRPublico() {
         </p>
 
         <ul>
-          <li>✔ Indústrias</li>
-          <li>✔ Comércios</li>
-          <li>✔ Prestadores de serviço</li>
-          <li>✔ Construção civil</li>
-          <li>✔ Clínicas e hospitais</li>
-          <li>✔ Empresas de pequeno, médio e grande porte</li>
+          <li> Indústrias</li>
+          <li> Comércios</li>
+          <li> Prestadores de serviço</li>
+          <li> Construção civil</li>
+          <li> Clínicas e hospitais</li>
+          <li> Empresas de pequeno, médio e grande porte</li>
         </ul>
       </div>
     </section>

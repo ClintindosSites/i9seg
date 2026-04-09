@@ -8,7 +8,7 @@ export default function RiscosHeroIntro() {
         <div className="overlay"></div>
 
         <div className="container hero-content">
-          <h1>Consultoria em Fatores de Riscos Ocupacionais</h1>
+          <h1>Gestão Estratégica de Riscos Ocupacionais</h1>
 
           <p>
             Identificação, avaliação e controle de riscos físicos, químicos,
@@ -22,24 +22,6 @@ export default function RiscosHeroIntro() {
           >
             Solicitar Avaliação de Riscos
           </Link>
-        </div>
-      </section>
-
-      {/* INTRODUÇÃO */}
-      <section className="section">
-        <div className="container">
-          <h2>Gestão Estratégica de Riscos Ocupacionais</h2>
-
-          <p>
-            A correta identificação dos fatores de riscos ocupacionais é
-            essencial para a conformidade legal e proteção da empresa contra
-            multas, processos trabalhistas e afastamentos previdenciários.
-          </p>
-
-          <p>
-            Atuamos com metodologia técnica estruturada conforme exigências da
-            NR-01 e demais Normas Regulamentadoras aplicáveis.
-          </p>
         </div>
       </section>
     </>

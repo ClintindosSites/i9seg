@@ -12,11 +12,8 @@ body {
 html {
   scroll-behavior: smooth;
 }
-h1,
-h2,
-h3,
-h4 {
-  color: #003b44;
+ul {
+  list-style: none;
 }
 .container {
   width: 90%;
@@ -185,14 +182,6 @@ h4 {
   font-size: 14px;
 }
 
-/* OVERLAY */
-.overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 1;
-}
-
 /* RESPONSIVO */
 @media (max-width: 992px) {
   .nav-desktop {
@@ -257,7 +246,7 @@ h4 {
 .hero-content h1 {
   font-size: 42px;
   margin-bottom: 20px;
-  color: fff;
+  color: #fff;
 }
 
 .hero-content p {
@@ -426,7 +415,7 @@ h4 {
 }
 
 .cta-button {
-  display: inline-block;
+  display: flex;
   background: white;
   color: #1e73e8;
   padding: 14px 28px;
@@ -1061,7 +1050,7 @@ h4 {
 
 /* BOTÃO */
 .cta-button {
-  display: inline-block;
+  display: flex;
   background: #003b44;
   color: #fff;
   padding: 14px 28px;
@@ -1316,7 +1305,7 @@ h4 {
 .hero-servico .overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at center, transparent, #0f3c44);
+
   z-index: 1;
 }
 
@@ -1329,7 +1318,7 @@ h4 {
 
 /* TAG */
 .tag-servico {
-  display: inline-block;
+  display: flex;
   background: rgba(255, 255, 255, 0.1);
   color: #00e0ff;
   padding: 6px 14px;
@@ -1361,6 +1350,7 @@ h4 {
   list-style: none;
   padding: 0;
   margin-bottom: 30px;
+  display: flex;
 }
 
 .hero-benefits li {
@@ -1368,26 +1358,6 @@ h4 {
   font-size: 16px;
   display: flex;
   align-items: center;
-}
-
-/* BOTÃO */
-.btn-primary {
-  display: inline-block;
-  background: linear-gradient(135deg, #00c9a7, #00e0ff);
-  color: #003b44;
-  padding: 14px 26px;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 16px;
-  transition: 0.3s;
-  text-decoration: none;
-  box-shadow: 0 10px 25px rgba(0, 224, 255, 0.3);
-}
-
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 15px 30px rgba(0, 224, 255, 0.5);
-  color: #fff;
 }
 
 /* RESPONSIVO */
@@ -1412,9 +1382,16 @@ h4 {
   .hero-subseo {
     font-size: 15px;
   }
-
-  .hero-benefits li {
+  .hero-benefits {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+  }
+  .hero-benefits li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
   }
 }
 
@@ -1640,16 +1617,14 @@ h4 {
 
 /* FUNDO COM IMAGEM + GRADIENTE */
 .ergonomia-cta {
-  background:
-    linear-gradient(rgba(15, 60, 68, 0.85), rgba(15, 60, 68, 0.95)),
-    url("/images/ergonomia-cta.jpg") center/cover no-repeat;
+  background: url("/images/ergonomia-bg.webp") center/cover no-repeat;
 }
 
 /* OVERLAY EXTRA */
 .cta-final .overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at center, transparent, #0f3c44);
+
   z-index: 1;
 }
 
@@ -1687,7 +1662,7 @@ h4 {
   font-weight: bold;
   box-shadow: 0 10px 30px rgba(0, 224, 255, 0.4);
   transition: 0.3s;
-  display: inline-block;
+  display: flex;
   text-decoration: none;
 }
 
@@ -1735,7 +1710,7 @@ h4 {
 /* HERO BASE (reutiliza o mesmo) */
 .hero-servico {
   position: relative;
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   color: #fff;
@@ -1747,14 +1722,37 @@ h4 {
   background: url("/images/pgr-bg.webp") center/cover no-repeat;
 }
 
+.cta-riscos {
+  position: relative;
+  background: url("/images/gestao-de-riscos-bg.webp") center/cover no-repeat;
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
 /* OVERLAY */
-.hero-servico .overlay {
+.cta-riscos .overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at center, transparent, #0f3c44);
+  background: rgba(15, 60, 68, 0.75);
   z-index: 1;
 }
 
+/* CONTEÚDO */
+.cta-riscos .container {
+  position: relative;
+  z-index: 2;
+}
+.cta-riscos h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.cta-riscos p {
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
 /* CONTEÚDO */
 .hero-content {
   position: relative;
@@ -1764,7 +1762,7 @@ h4 {
 
 /* TAG */
 .tag-servico {
-  display: inline-block;
+  display: flex;
   background: rgba(255, 255, 255, 0.1);
   color: #00e0ff;
   padding: 6px 14px;
@@ -1802,25 +1800,6 @@ h4 {
   font-size: 16px;
   display: flex;
   align-items: center;
-}
-
-/* BOTÃO */
-.btn-primary {
-  display: inline-block;
-  background: linear-gradient(135deg, #00c9a7, #00e0ff);
-  color: #003b44;
-  padding: 14px 26px;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 16px;
-  transition: 0.3s;
-  text-decoration: none;
-  box-shadow: 0 10px 25px rgba(0, 224, 255, 0.3);
-}
-
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 15px 30px rgba(0, 224, 255, 0.5);
 }
 
 /* RESPONSIVO */
@@ -1998,8 +1977,12 @@ h4 {
 .alerta-card:hover {
   transform: translateY(-5px);
   background: rgba(255, 255, 255, 0.08);
+  border-left: 4px solid #fff;
 }
-
+.alerta-card:hover p,
+.alerta-card:hover h3 {
+  color: #fff;
+}
 /* TÍTULO CARD */
 .alerta-card h3 {
   font-size: 20px;
@@ -2069,16 +2052,13 @@ h4 {
 
 /* VARIAÇÃO PGR */
 .pgr-cta {
-  background:
-    linear-gradient(rgba(15, 60, 68, 0.85), rgba(10, 30, 35, 0.95)),
-    url("/images/pgr-cta.jpg") center/cover no-repeat;
+  background: url("/images/pgr-bg.webp") center/cover no-repeat;
 }
 
 /* OVERLAY */
 .cta-final .overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at center, transparent, #0f3c44);
   z-index: 1;
 }
 
@@ -2149,14 +2129,6 @@ h4 {
   background: url("/images/pcmso-bg.webp") right/cover no-repeat;
 }
 
-/* OVERLAY */
-.hero-servico .overlay {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at center, transparent, #0f3c44);
-  z-index: 1;
-}
-
 /* CONTEÚDO */
 .hero-content {
   position: relative;
@@ -2166,7 +2138,7 @@ h4 {
 
 /* TAG */
 .tag-servico {
-  display: inline-block;
+  display: flex;
   background: rgba(255, 255, 255, 0.1);
   color: #00e0ff;
   padding: 6px 14px;
@@ -2204,25 +2176,6 @@ h4 {
   font-size: 16px;
   display: flex;
   align-items: center;
-}
-
-/* BOTÃO */
-.btn-primary {
-  display: inline-block;
-  background: linear-gradient(135deg, #00c9a7, #00e0ff);
-  color: #003b44;
-  padding: 14px 26px;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 16px;
-  transition: 0.3s;
-  text-decoration: none;
-  box-shadow: 0 10px 25px rgba(0, 224, 255, 0.3);
-}
-
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 15px 30px rgba(0, 224, 255, 0.5);
 }
 
 /* RESPONSIVO */
@@ -2283,7 +2236,7 @@ h4 {
   content: "";
   width: 50px;
   height: 4px;
-  background: #1e73e8;
+  background: #003b44;
   display: block;
   margin-top: 8px;
   border-radius: 2px;
@@ -2309,6 +2262,7 @@ h4 {
   color: #333;
   position: relative;
   padding-left: 25px;
+  list-style: none;
 }
 
 /* CHECK ICON */
@@ -2338,9 +2292,14 @@ h4 {
 
 .processo-item:hover {
   transform: translateY(-5px);
+  background: #003b44;
+
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
-
+.processo-item:hover h4,
+.processo-item:hover p {
+  color: #fff;
+}
 .processo-item h4 {
   color: #0f3c44;
   margin-bottom: 10px;
@@ -2369,7 +2328,10 @@ h4 {
 /* AUTORIDADE PCMSO */
 .autoridade-pcmso {
   padding: 100px 20px;
-  background: linear-gradient(135deg, #0f3c44, #146c78);
+  background:
+    linear-gradient(to right, rgba(15, 60, 68, 0.85), rgba(20, 108, 120, 0.85)),
+    url("/images/pcmso-bg.webp") center/cover no-repeat;
+
   color: #fff;
   text-align: center;
 }
@@ -2390,7 +2352,7 @@ h4 {
   content: "";
   width: 60px;
   height: 4px;
-  background: #1e73e8;
+  background: #003b44;
   display: block;
   margin: 10px auto 0;
   border-radius: 2px;
@@ -2401,6 +2363,8 @@ h4 {
   list-style: none;
   padding: 0;
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .autoridade-pcmso ul li {
@@ -2424,21 +2388,15 @@ h4 {
 }
 
 /* BOTÃO */
-.autoridade-pcmso .btn-secondary {
-  display: inline-block;
+.autoridade-pcmso .btn-primary {
+  display: flex;
   padding: 14px 28px;
-  background: #1e73e8;
+  animation: pulse 2s infinite;
   color: #fff;
   border-radius: 30px;
   font-weight: 600;
   text-decoration: none;
   transition: 0.3s;
-}
-
-.autoridade-pcmso .btn-secondary:hover {
-  background: #155ab6;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* RESPONSIVO */
@@ -2487,7 +2445,7 @@ h4 {
 
 /* TAG */
 .tag-servico {
-  display: inline-block;
+  display: flex;
   background: #1e73e8;
   color: #fff;
   padding: 6px 14px;
@@ -2523,26 +2481,6 @@ h4 {
 .hero-benefits li {
   margin-bottom: 10px;
   font-size: 16px;
-}
-
-/* BOTÃO */
-.btn-primary {
-  display: inline-block;
-  background: #1e73e8;
-  padding: 14px 28px;
-  border-radius: 30px;
-  color: #fff;
-  font-weight: 600;
-  text-decoration: none;
-  transition: 0.3s;
-  max-width: fit-content;
-  margin: 0 auto;
-}
-
-.btn-primary:hover {
-  background: #155ab6;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* RESPONSIVO */
@@ -2584,7 +2522,7 @@ h4 {
   content: "";
   width: 50px;
   height: 4px;
-  background: #1e73e8;
+  background: #003b44;
   display: block;
   margin-top: 8px;
   border-radius: 2px;
@@ -2632,13 +2570,19 @@ h4 {
   background: #f8fbfc;
   padding: 25px;
   border-radius: 10px;
-  border-left: 4px solid #1e73e8;
+  border-left: 4px solid #003b44;
   transition: 0.3s;
 }
 
 .ltcat-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  background: #003b44;
+  border-left: #1877f2 4px solid;
+}
+.ltcat-item:hover h4,
+.ltcat-item:hover p {
+  color: #fff;
 }
 
 .ltcat-item h4 {
@@ -2691,14 +2635,27 @@ h4 {
    AUTORIDADE - LTCAT
 ========================= */
 .autoridade-ltcat {
-  background: linear-gradient(135deg, #0f3c44, #146c78);
+  background: url("/images/ltcat-bg.webp") center/cover no-repeat;
   color: #fff;
   padding: 80px 20px;
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
 
+/* OVERLAY ESCURO */
+.autoridade-ltcat::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 20, 25, 0.75); /* sombra */
+  z-index: 1;
+}
+
+/* CONTEÚDO FICA NA FRENTE */
 .autoridade-ltcat .container {
+  position: relative;
+  z-index: 2;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -2725,19 +2682,21 @@ h4 {
 
 /* BOTÃO */
 .autoridade-ltcat .btn-secondary {
-  display: inline-block;
-  background: #ffffff;
-  color: #0f3c44;
+  display: flex;
+  background: #003b44;
+  color: #fff;
   padding: 14px 28px;
   border-radius: 30px;
   font-weight: 600;
   text-decoration: none;
   transition: 0.3s;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  animation: pulse 2s infinite;
 }
 
 .autoridade-ltcat .btn-secondary:hover {
-  background: #e6f2f3;
+  background: #ffffff;
+  color: #0f3c44;
   transform: translateY(-3px);
 }
 
@@ -2784,7 +2743,7 @@ h4 {
 
 /* TAG */
 .hero-li .tag {
-  display: inline-block;
+  display: flex;
   background: rgba(255, 255, 255, 0.1);
   padding: 6px 14px;
   border-radius: 20px;
@@ -2808,23 +2767,6 @@ h4 {
   font-size: 1.1rem;
   margin-bottom: 30px;
   opacity: 0.95;
-}
-
-/* BOTÃO */
-.hero-li .btn-primary {
-  display: inline-block;
-  background: #1e73e8;
-  color: #fff;
-  padding: 14px 28px;
-  border-radius: 30px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.hero-li .btn-primary:hover {
-  background: #155ab6;
-  transform: translateY(-3px);
 }
 
 /* RESPONSIVO */
@@ -2980,7 +2922,7 @@ h4 {
 
 /* NÚMERO */
 .processo-item span {
-  display: inline-block;
+  display: flex;
   font-size: 1.5rem;
   font-weight: bold;
   color: #1e73e8;
@@ -3034,16 +2976,21 @@ h4 {
 .cta-li {
   position: relative;
   padding: 100px 20px;
-  background: url("/images/cta-insalubridade.jpg") center/cover no-repeat;
+  background: url("/images/insalubridade-bg.webp") center/cover no-repeat;
   text-align: center;
   color: #fff;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /* OVERLAY */
 .cta-li .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(15, 60, 68, 0.9);
 }
 
 /* CONTAINER */
@@ -3066,24 +3013,6 @@ h4 {
   font-size: 1.1rem;
   margin-bottom: 30px;
   opacity: 0.95;
-}
-
-/* BOTÃO */
-.cta-li .btn-primary {
-  display: inline-block;
-  background: #1e73e8;
-  color: #fff;
-  padding: 15px 30px;
-  border-radius: 30px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: 0.3s;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-.cta-li .btn-primary:hover {
-  background: #155ab6;
-  transform: translateY(-3px);
 }
 
 /* RESPONSIVO */
@@ -3126,7 +3055,9 @@ h4 {
 
 /* TAG */
 .hero-periculosidade .tag {
-  display: inline-block;
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
   background: #1e73e8;
   padding: 6px 14px;
   border-radius: 30px;
@@ -3155,26 +3086,12 @@ h4 {
   padding: 0;
   margin-bottom: 30px;
 }
-
+.hero-periculosidade ul {
+  display: flex;
+}
 .hero-periculosidade .hero-benefits li {
   margin-bottom: 10px;
   font-size: 16px;
-}
-
-/* BOTÃO */
-.hero-periculosidade .btn-primary {
-  display: inline-block;
-  background: #146c78;
-  color: #fff;
-  padding: 14px 28px;
-  border-radius: 40px;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.hero-periculosidade .btn-primary:hover {
-  background: #0f3c44;
-  transform: translateY(-2px);
 }
 
 /* RESPONSIVO */
@@ -3190,6 +3107,11 @@ h4 {
 
   .hero-periculosidade p {
     font-size: 16px;
+  }
+  .hero-periculosidade ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 /* SEÇÃO */
@@ -3232,8 +3154,12 @@ h4 {
 
 .risco-card:hover {
   transform: translateY(-5px);
+  background: #003b44;
 }
-
+.risco-card:hover h3,
+.risco-card:hover p {
+  color: #fff;
+}
 /* TITULO CARD */
 .risco-card h3 {
   margin-bottom: 10px;
@@ -3306,11 +3232,15 @@ h4 {
 
 .processo-periculosidade .processo-item:hover {
   transform: translateY(-5px);
+  background: #003b44;
 }
-
+.processo-periculosidade .processo-item:hover h4,
+.processo-periculosidade .processo-item:hover p {
+  color: #fff;
+}
 /* NUMERO */
 .processo-periculosidade .processo-item span {
-  display: inline-block;
+  display: flex;
   font-size: 22px;
   font-weight: bold;
   color: #1e73e8;
@@ -3358,14 +3288,13 @@ h4 {
   padding: 100px 0;
   text-align: center;
   color: #fff;
-  background: url("/images/periculosidade-cta.jpg") center/cover no-repeat;
+  background: url("/images/periculosidade-bg.webp") center/cover no-repeat;
 }
 
 /* OVERLAY */
 .cta-periculosidade .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(15, 60, 68, 0.85);
 }
 
 /* CONTEÚDO */
@@ -3388,23 +3317,6 @@ h4 {
   color: #e0e0e0;
 }
 
-/* BOTÃO */
-.cta-periculosidade .btn-primary {
-  display: inline-block;
-  background: #1e73e8;
-  color: #fff;
-  padding: 16px 32px;
-  border-radius: 40px;
-  font-size: 16px;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.cta-periculosidade .btn-primary:hover {
-  background: #155bb5;
-  transform: translateY(-3px);
-}
-
 /* RESPONSIVO */
 @media (max-width: 768px) {
   .cta-periculosidade {
@@ -3422,8 +3334,11 @@ h4 {
 /* pagina de assistencia tecnica*/
 .hero-pericia {
   position: relative;
-  height: 100vh;
+  height: 70vh;
   display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
   align-items: center;
   color: #fff;
   background: url("/images/assistencia-bg.webp") center/cover no-repeat;
@@ -3445,7 +3360,9 @@ h4 {
 
 /* TAG */
 .hero-pericia .tag {
-  display: inline-block;
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
   background: #1e73e8;
   padding: 6px 14px;
   border-radius: 30px;
@@ -3473,27 +3390,12 @@ h4 {
   list-style: none;
   padding: 0;
   margin-bottom: 30px;
+  margin: 0 auto;
 }
 
 .hero-pericia .hero-benefits li {
   margin-bottom: 10px;
   font-size: 16px;
-}
-
-/* BOTÃO */
-.hero-pericia .btn-primary {
-  display: inline-block;
-  background: #146c78;
-  color: #fff;
-  padding: 14px 28px;
-  border-radius: 40px;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.hero-pericia .btn-primary:hover {
-  background: #0f3c44;
-  transform: translateY(-2px);
 }
 
 /* RESPONSIVO */
@@ -3619,9 +3521,11 @@ h4 {
 /* HOVER */
 .importancia-pericia .card-info:hover {
   transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.08);
 }
-
+.importancia-pericia .card-info:hover h3,
+.importancia-pericia .card-info:hover p {
+  color: #fff;
+}
 /* TITULO CARD */
 .importancia-pericia .card-info h3 {
   font-size: 18px;
@@ -3668,35 +3572,6 @@ h4 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-}
-
-/* CARDS */
-.importancia-pericia .card-info {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 30px;
-  border-radius: 12px;
-  text-align: left;
-  transition: 0.3s;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-/* HOVER */
-.importancia-pericia .card-info:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.08);
-}
-
-/* TITULO CARD */
-.importancia-pericia .card-info h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-/* TEXTO */
-.importancia-pericia .card-info p {
-  font-size: 15px;
-  color: #d1d5db;
-  line-height: 1.6;
 }
 
 /* RESPONSIVO */
@@ -3837,7 +3712,7 @@ h4 {
   backdrop-filter: blur(5px);
   transition: 0.3s;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #146c78;
+  color: #fff;
 }
 
 .highlight span:hover {
@@ -3875,7 +3750,6 @@ h4 {
 .cta-final-pericia .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(15, 60, 68, 0.85);
 }
 
 .cta-final-pericia .container {
@@ -3898,25 +3772,6 @@ h4 {
   opacity: 0.95;
 }
 
-/* BOTÃO */
-.cta-final-pericia .btn-primary {
-  display: inline-block;
-  background: #25d366;
-  color: #fff;
-  padding: 16px 30px;
-  border-radius: 40px;
-  font-size: 16px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: 0.3s;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-.cta-final-pericia .btn-primary:hover {
-  transform: translateY(-3px);
-  background: #1ebe5d;
-}
-
 /* RESPONSIVO */
 @media (max-width: 768px) {
   .cta-final-pericia {
@@ -3935,7 +3790,7 @@ h4 {
 /* HERO CONSULTORIA */
 .hero-consultoria {
   position: relative;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   background: url("/images/consultoria-seguranca.webp") center/cover no-repeat;
@@ -3945,7 +3800,6 @@ h4 {
 .hero-consultoria .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(15, 60, 68, 0.85);
 }
 
 /* CONTEÚDO */
@@ -3968,25 +3822,6 @@ h4 {
   line-height: 1.6;
   margin-bottom: 30px;
   opacity: 0.95;
-}
-
-/* BOTÃO */
-.hero-consultoria .btn-primary {
-  display: inline-block;
-  background: #25d366;
-  color: #fff;
-  padding: 16px 28px;
-  border-radius: 40px;
-  font-size: 16px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: 0.3s;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-.hero-consultoria .btn-primary:hover {
-  transform: translateY(-3px);
-  background: #1ebe5d;
 }
 
 /* RESPONSIVO */
@@ -4080,9 +3915,9 @@ h4 {
   backdrop-filter: blur(5px);
 }
 
-.secao-servicos-consultoria .card-info:hover {
+.secao-servicos-consultoria .card-info:hover * {
   transform: translateY(-5px);
-  background: #146c78;
+  color: #fff;
 }
 
 /* TÍTULO CARD */
@@ -4259,12 +4094,14 @@ h4 {
 .section.dark h2 {
   font-size: 32px;
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .section.dark p {
   max-width: 700px;
   margin: 0 auto 30px;
   opacity: 0.9;
+  color: #fff;
 }
 
 /* HIGHLIGHT */
@@ -4278,39 +4115,35 @@ h4 {
 }
 
 /* CTA */
-.cta {
-  background: linear-gradient(135deg, #146c78, #0f3c44);
+.cta-consultoria {
+  background: url("/images/consultoria-seguranca.webp") center/cover no-repeat;
   padding: 80px 20px;
   text-align: center;
   color: #fff;
+  position: relative;
+  overflow: hidden;
 }
-
-.cta h2 {
+.cta-consultoria .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 20, 25, 0.75);
+  z-index: 1;
+}
+.cta-consultoria .container {
+  position: relative;
+  z-index: 2;
+}
+.cta-consultoria .cta-consultoria h2 {
   font-size: 32px;
   margin-bottom: 20px;
 }
 
-.cta p {
+.cta-consultoria p {
   max-width: 600px;
   margin: 0 auto 30px;
   opacity: 0.9;
 }
 
-/* BOTÃO */
-.btn-primary {
-  background: #1e73e8;
-  padding: 14px 28px;
-  border-radius: 30px;
-  color: #fff;
-  font-weight: 600;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-.btn-primary:hover {
-  transform: scale(1.05);
-  background: #155ab6;
-}
 /*sessão de gestao de riscos*/
 /* HERO RISCOS */
 .hero-riscos {
@@ -4352,13 +4185,18 @@ h4 {
   background: #fff;
   text-align: center;
 }
+.section.white h2 {
+  color: #003b44;
+}
 
 .section h2 {
   font-size: 32px;
   margin-bottom: 20px;
   color: #0f3c44;
 }
-
+.section.white .green {
+  color: #003b44;
+}
 .section p {
   max-width: 700px;
   margin: 0 auto 20px;
@@ -4366,21 +4204,6 @@ h4 {
   line-height: 1.6;
 }
 
-/* BOTÃO PADRÃO */
-.btn-primary {
-  background: #1e73e8;
-  padding: 14px 28px;
-  border-radius: 30px;
-  color: #fff;
-  font-weight: 600;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-.btn-primary:hover {
-  transform: scale(1.05);
-  background: #155ab6;
-}
 /* GRID PADRÃO */
 .grid {
   display: grid;
@@ -4402,7 +4225,7 @@ h4 {
 .card-info:hover {
   transform: translateY(-5px);
   border: 1px solid #003b44;
-  background: rgba(255, 255, 255, 0.08);
+  background: #fff;
 }
 
 .card-info h3 {
@@ -4422,6 +4245,41 @@ h4 {
 
 .card-info:hover p {
   color: #003b44;
+}
+.card-treinamento {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: left;
+  transition: 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+
+  /* 🔥 FORÇA COR */
+  color: #003b44;
+}
+
+.card-treinamento h3 {
+  color: #003b44;
+}
+
+.dark .card-treinamento p {
+  color: #003b44;
+}
+
+.card-treinamento:hover {
+  transform: translateY(-5px);
+  border: 1px solid #003b44;
+}
+
+.card-treinamento:hover {
+  background-color: #003b44;
+  border: #fff 1px solid;
+}
+.card-treinamento:hover h3 {
+  color: #fff;
+}
+.card-treinamento:hover p {
+  color: #fff;
 }
 /* PROCESSO */
 .processo {
@@ -4491,6 +4349,37 @@ h4 {
   line-height: 1.6;
 }
 
+.cta-treinamento {
+  position: relative;
+  background: url("/images/gestao-de-riscos-bg.webp") center/cover no-repeat;
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* OVERLAY */
+.cta-treinamento .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 60, 68, 0.75);
+  z-index: 1;
+}
+
+/* CONTEÚDO ACIMA */
+.cta-treinamento .container {
+  position: relative;
+  z-index: 2;
+}
+.cta-treinamento h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.cta-treinamento p {
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
 /* CTA (já alinhado com padrão anterior) */
 .cta {
   background: linear-gradient(135deg, #146c78, #0f3c44);
@@ -4508,6 +4397,7 @@ h4 {
   margin-bottom: 30px;
   opacity: 0.9;
 }
+
 /*página de treinamento*/
 /* HERO TREINAMENTOS */
 .hero-treinamentos {
@@ -4549,19 +4439,28 @@ h4 {
 
 /* BOTÃO PADRÃO (caso ainda não tenha global) */
 .btn-primary {
-  display: inline-block;
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background: #146c78;
   color: #fff;
   padding: 14px 28px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
-  transition: 0.3s;
+  transition: 0.5s;
+  margin: 0 auto;
+  animation: pulse 2.5s infinite;
 }
 
 .btn-primary:hover {
-  background: #0f3c44;
+  background: #fff;
+  color: #003b44;
   transform: translateY(-2px);
+
+  box-shadow: 0 5px 55px rgba(0, 224, 255, 0.5);
 }
 
 /* SECTION PADRÃO */
@@ -4574,7 +4473,9 @@ h4 {
   margin-bottom: 20px;
   color: #0f3c44;
 }
-
+.section .container {
+  text-align: center;
+}
 .section p {
   font-size: 16px;
   line-height: 1.7;
@@ -4643,6 +4544,7 @@ h4 {
 .beneficios li {
   margin-bottom: 10px;
   font-size: 16px;
+  color: #fff;
 }
 
 /* ALERTA */
@@ -4650,9 +4552,11 @@ h4 {
   margin-top: 30px;
   padding: 20px;
   border-radius: 10px;
-  background: rgba(255, 0, 0, 0.08);
-  border: 1px solid rgba(255, 0, 0, 0.2);
-  color: #fff;
+  background: #fff;
+  border: 1px solid #00e0ff;
+  color: #003b44;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 /* RESPONSIVO */
