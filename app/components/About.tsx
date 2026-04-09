@@ -64,7 +64,12 @@ export default function About() {
               <li>✔ Atendimento técnico especializado</li>
               <li>✔ Estratégias adaptadas à realidade da empresa</li>
             </ul>
-            <img src="/images/logo.webp" alt="logo de i9seg" />
+            <Image
+              src="/images/logo.webp"
+              alt="logo de i9seg"
+              width={200}
+              height={200}
+            />
           </div>
         </div>
 

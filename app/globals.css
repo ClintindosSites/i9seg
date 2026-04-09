@@ -354,7 +354,8 @@ ul {
   flex-wrap: wrap;
 }
 .diferenciais img {
-  max-width: 400px;
+  max-width: 500px;
+  width: 100%;
 }
 .diferenciais li {
   margin-bottom: 10px;
