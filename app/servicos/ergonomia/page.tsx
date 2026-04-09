@@ -4,11 +4,10 @@ import GarantiaErgonomia from "./components/GarantiaErgonomia";
 import HeroErgonomia from "./components/HeroErgonomia";
 
 export const metadata = {
-  title: "Ergonomia Empresarial e AET conforme NR-17",
+  title: "Ergonomia e AET em BH | NR-17",
   description:
-    "Realizamos Análise Ergonômica do Trabalho (AET) conforme NR-17, incluindo fatores psicossociais.",
+    "Análise Ergonômica do Trabalho (AET) para reduzir afastamentos e processos.",
 };
-
 export default function Ergonomia() {
   return (
     <>
