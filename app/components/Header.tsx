@@ -8,6 +8,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [hideHeader, setHideHeader] = useState(false);
 
+  // esconder header ao scroll
   useEffect(() => {
     let lastScroll = window.scrollY;
 
@@ -15,37 +16,50 @@ export default function Header() {
       const currentScroll = window.scrollY;
 
       if (currentScroll > lastScroll && currentScroll > 100) {
-        setHideHeader(true); // descendo
+        setHideHeader(true);
       } else {
-        setHideHeader(false); // subindo
+        setHideHeader(false);
       }
 
       lastScroll = currentScroll;
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // travar scroll quando menu abrir
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "auto";
   }, [menuOpen]);
+
+  // fechar menu com ESC (nível profissional)
+  useEffect(() => {
+    const handleEsc = (e: any) => {
+      if (e.key === "Escape") setMenuOpen(false);
+    };
+
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, []);
+
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <>
       <header className={`header ${hideHeader ? "hide" : ""}`}>
         <div className="container header-flex">
-          <Link href="/" className="logo">
+          <Link href="/" className="logo" onClick={closeMenu}>
             <Image
               src="/images/logo.webp"
               alt="Logo"
               width={100}
               height={80}
               priority
-              style={{ height: "auto" }}
             />
           </Link>
 
-          {/* MENU DESKTOP */}
+          {/* DESKTOP */}
           <nav className="nav-desktop">
             <Link href="/">Início</Link>
             <Link href="/#sobre">Sobre</Link>
@@ -54,30 +68,16 @@ export default function Header() {
               <span>Serviços ▾</span>
               <div className="dropdown-content">
                 <Link href="/servicos/assistencia-tecnica">
-                  Assistência Técnica Pericial
+                  Assistência Técnica
                 </Link>
-                <Link href="/servicos/consultoria">
-                  Consultoria em Segurança do Trabalho
-                </Link>
-                <Link href="/servicos/gestao-de-riscos">
-                  Gestão de Riscos Ocupacionais
-                </Link>
-                <Link href="/servicos/periculosidade">
-                  LP – Laudo de Periculosidade
-                </Link>
-                <Link href="/servicos/insalubridade">
-                  LI – Laudo de Insalubridade
-                </Link>
+                <Link href="/servicos/consultoria">Consultoria</Link>
+                <Link href="/servicos/gestao-de-riscos">Gestão de Riscos</Link>
+                <Link href="/servicos/periculosidade">Periculosidade</Link>
+                <Link href="/servicos/insalubridade">Insalubridade</Link>
                 <Link href="/servicos/ltcat">LTCAT</Link>
-                <Link href="/servicos/pcmso">
-                  PCMSO – Programa de Controle Médico
-                </Link>
-                <Link href="/servicos/gerenciamento-de-riscos">
-                  PGR – Programa de Gerenciamento de Riscos
-                </Link>
-                <Link href="/servicos/ergonomia">
-                  Ergonomia – AET e Fatores Psicossociais
-                </Link>
+                <Link href="/servicos/pcmso">PCMSO</Link>
+                <Link href="/servicos/gerenciamento-de-riscos">PGR</Link>
+                <Link href="/servicos/ergonomia">Ergonomia</Link>
               </div>
             </div>
 
@@ -105,46 +105,56 @@ export default function Header() {
         </div>
       </header>
 
-      {/* MENU MOBILE */}
-      <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
-        <div className="mobile-header">
-          <span>Menu</span>
-        </div>
+      {/* OVERLAY (corrigido) */}
+      <div
+        className={`header-overlay ${menuOpen ? "show" : ""}`}
+        onClick={closeMenu}
+      />
 
+      {/* MENU MOBILE */}
+      <aside className={`mobile-menu ${menuOpen ? "open" : ""}`}>
         <div className="mobile-links">
-          <Link href="/" onClick={() => setMenuOpen(false)}>
+          <Link href="/" onClick={closeMenu}>
             Início
           </Link>
-          <Link href="/#sobre" onClick={() => setMenuOpen(false)}>
+          <Link href="/#sobre" onClick={closeMenu}>
             Sobre
           </Link>
 
           <div className="mobile-group">
-            <span>Serviços</span>
-
-            <Link href="/servicos/assistencia-tecnica">
+            <Link href="/servicos/assistencia-tecnica" onClick={closeMenu}>
               Assistência Técnica
             </Link>
-            <Link href="/servicos/consultoria">Consultoria</Link>
-            <Link href="/servicos/gestao-de-riscos">Gestão de Riscos</Link>
-            <Link href="/servicos/periculosidade">Periculosidade</Link>
-            <Link href="/servicos/insalubridade">Insalubridade</Link>
-            <Link href="/servicos/ltcat">LTCAT</Link>
-            <Link href="/servicos/pcmso">PCMSO</Link>
-            <Link href="/servicos/gerenciamento-de-riscos">PGR</Link>
-            <Link href="/servicos/ergonomia">Ergonomia</Link>
+            <Link href="/servicos/consultoria" onClick={closeMenu}>
+              Consultoria
+            </Link>
+            <Link href="/servicos/gestao-de-riscos" onClick={closeMenu}>
+              Gestão de Riscos
+            </Link>
+            <Link href="/servicos/periculosidade" onClick={closeMenu}>
+              Periculosidade
+            </Link>
+            <Link href="/servicos/insalubridade" onClick={closeMenu}>
+              Insalubridade
+            </Link>
+            <Link href="/servicos/ltcat" onClick={closeMenu}>
+              LTCAT
+            </Link>
+            <Link href="/servicos/pcmso" onClick={closeMenu}>
+              PCMSO
+            </Link>
+            <Link href="/servicos/gerenciamento-de-riscos" onClick={closeMenu}>
+              PGR
+            </Link>
+            <Link href="/servicos/ergonomia" onClick={closeMenu}>
+              Ergonomia
+            </Link>
           </div>
 
-          <Link href="/#contato" onClick={() => setMenuOpen(false)}>
-            Contato
-          </Link>
+          <Link href="/#faq">FAQ</Link>
+          <Link href="/#contato">Contato</Link>
         </div>
-      </div>
-
-      {/* OVERLAY */}
-      {menuOpen && (
-        <div className="overlay" onClick={() => setMenuOpen(false)} />
-      )}
+      </aside>
     </>
   );
 }

@@ -147,13 +147,10 @@ ul {
   width: 280px;
   height: 100vh;
   background: #003b44;
-  display: flex;
-  flex-direction: column;
   padding: 80px 20px;
-  transition: 0.3s;
+  transition: right 0.35s ease;
   z-index: 1001;
 }
-
 .mobile-menu a {
   margin: 15px 0;
   color: #fff;
@@ -164,7 +161,15 @@ ul {
 .mobile-menu.open {
   right: 0;
 }
-
+.mobile-group {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
 /* DROPDOWN MOBILE */
 .mobile-menu details {
   margin: 10px 0;
@@ -192,15 +197,27 @@ ul {
     display: flex;
   }
 }
+.header-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.header-overlay.show {
+  opacity: 1;
+  pointer-events: all;
+}
 .hero {
   background: linear-gradient(to right, #0f3c44, #146c78);
   color: #fff;
   padding: 20px 0;
   text-align: center;
-}
-.hero {
   position: relative;
-  height: 70vh;
+  height: 85vh;
   overflow: hidden;
 }
 
@@ -633,19 +650,8 @@ ul {
 }
 
 .contato-form-box button {
-  padding: 14px;
-  border: none;
-  background: #1e73e8;
-  color: white;
-  border-radius: 6px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.contato-form-box button:hover {
-  background: #0d47a1;
-  transform: translateY(-2px);
+  max-width: 400px;
+  width: 100%;
 }
 
 /* RESPONSIVO */

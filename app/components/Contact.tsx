@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Contact() {
@@ -55,25 +56,25 @@ Mensagem: ${form.mensagem}`;
           </div>
 
           <div className="contato-redes">
-            <a
+            <Link
               href="https://wa.me/553186191591"
               target="_blank"
               className="social-btn whatsapp"
             >
               WhatsApp
-            </a>
+            </Link>
 
-            <a href="#" className="social-btn instagram">
+            <Link href="#" className="social-btn instagram">
               Instagram
-            </a>
+            </Link>
 
-            <a href="#" className="social-btn facebook">
+            <Link href="#" className="social-btn facebook">
               Facebook
-            </a>
+            </Link>
 
-            <a href="#" className="social-btn linkedin">
+            <Link href="#" className="social-btn linkedin">
               LinkedIn
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -112,7 +113,9 @@ Mensagem: ${form.mensagem}`;
               onChange={handleChange}
             ></textarea>
 
-            <button type="submit">Receber Proposta</button>
+            <button type="submit" className="btn-primary">
+              Receber Proposta
+            </button>
           </form>
         </div>
       </div>
