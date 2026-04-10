@@ -147,12 +147,12 @@ ul {
   width: 280px;
   height: 100vh;
   background: #003b44;
-  padding: 80px 20px;
+  padding: 30px 20px;
   transition: right 0.35s ease;
   z-index: 1001;
 }
 .mobile-menu a {
-  margin: 15px 0;
+  margin: 12px 0;
   color: #fff;
   text-decoration: none;
   font-weight: 500;
@@ -4447,27 +4447,47 @@ ul {
 /* BOTÃO PADRÃO (caso ainda não tenha global) */
 .btn-primary {
   display: flex;
-  width: fit-content;
-  justify-content: center;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  width: fit-content;
   background: #146c78;
   color: #fff;
   padding: 14px 28px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
-  transition: 0.5s;
+
+  transition: all 0.3s ease;
   margin: 0 auto;
+
   animation: pulse 2.5s infinite;
 }
 
+/* ÍCONE */
+.btn-primary .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+/* HOVER */
 .btn-primary:hover {
   background: #fff;
   color: #003b44;
   transform: translateY(-2px);
-
   box-shadow: 0 5px 55px rgba(0, 224, 255, 0.5);
+}
+
+/* ANIMAÇÃO DO ÍCONE */
+.btn-primary:hover .icon {
+  transform: scale(1.2) rotate(-5deg);
+}
+
+/* OPCIONAL: leve movimento contínuo no ícone */
+.btn-primary .icon svg {
+  transition: 0.3s;
 }
 
 /* SECTION PADRÃO */
