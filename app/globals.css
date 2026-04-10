@@ -91,8 +91,9 @@ ul {
 
 .dropdown-content {
   position: absolute;
-  top: 35px;
+  top: 100%;
   left: 0;
+  margin-top: 5px; /* pequeno respiro controlado */
   background: #fff;
   min-width: 220px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -103,6 +104,14 @@ ul {
   z-index: 999;
 }
 
+.dropdown::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 15px;
+}
 .dropdown-content a {
   padding: 10px 20px;
   font-size: 14px;
